@@ -86,3 +86,11 @@ button:hover {
     cursor: pointer;
     box-shadow: 0 0 30px lightblue;
 }
+
+.header-2{
+    text-align: center;
+}
+
+.center-align{
+    text-align: center;
+}

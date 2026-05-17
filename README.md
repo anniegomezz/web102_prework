@@ -24,7 +24,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://imgur.com/a/JhDHzK7' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://www.loom.com/share/aff98987bcbb4d0f90718fc62d1c6a4c' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Video created with the Loom Google Chrome extension on macOS.
 

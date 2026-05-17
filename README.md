@@ -17,7 +17,6 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-## * [ ] List anything else that you can get done to improve the app functionality!
 * [X] Changed filtering button CSS styles to change to a pointer and light-blue color on hover.
 * [X] Added CSS classes to the headers and descriptions of each section to be center-aligned.
 
@@ -25,7 +24,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='https://www.loom.com/share/aff98987bcbb4d0f90718fc62d1c6a4c' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/JhDHzK7' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Video created with the Loom Google Chrome extension on macOS.
 

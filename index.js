@@ -39,12 +39,12 @@ function addGamesToPage(games) {
         // about each game
         // TIP: if your images are not displaying, make sure there is space
         // between the end of the src attribute and the end of the tag ("/>")
-        const display = `
+        const GameDivDisplay = `
+            <img src="${games[i].img}" class="game-img" />
             <h1>${games[i].name}</h1>
             <p>${games[i].description}</p>
-            <img src="${games[i].img}" class="game-img" />
         `;
-        newGameDiv.innerHTML = display;
+        newGameDiv.innerHTML = GameDivDisplay;
         // append the game to the games-container
         gamesContainer.appendChild(newGameDiv);
         
@@ -68,19 +68,48 @@ addGamesToPage(GAMES_JSON);
 const contributionsCard = document.getElementById("num-contributions");
 
 // use reduce() to count the number of total contributions by summing the backers
-
+const totalContributions = GAMES_JSON.reduce( (acc, game) =>{
+    return acc + game.backers;
+}, 0);
 
 // set the inner HTML using a template literal and toLocaleString to get a number with commas
+const backersDisplay = `
+    <p>${totalContributions.toLocaleString('en-US')}</p>
+`;
+
+contributionsCard.innerHTML = backersDisplay;
+
 
 
 // grab the amount raised card, then use reduce() to find the total amount raised
 const raisedCard = document.getElementById("total-raised");
 
+//using reduce()to find the total amount raised = pledged value from all games
+const totalRaised = GAMES_JSON.reduce( (acc, game) =>{
+    return acc + game.pledged;
+}, 0);
+
 // set inner HTML using template literal
+const raisedDisplay = `
+    <p>$${totalRaised.toLocaleString('en-US')}</p>
+`;
+
+raisedCard.innerHTML = raisedDisplay;
 
 
 // grab number of games card and set its inner HTML
 const gamesCard = document.getElementById("num-games");
+
+//grab the number of games by counting each game object in the GAMES_JSON array
+const totalGames = GAMES_JSON.length;
+
+// set inner HTML using template literal
+const totalGamesDisplay = `
+    <p>${totalGames.toLocaleString('en-US')}</p>
+`;
+
+gamesCard.innerHTML = totalGamesDisplay;
+
 
 
 /*************************************************************************************
